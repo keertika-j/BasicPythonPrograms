@@ -50,20 +50,19 @@ print('Sources (operations without inputs):')
 for op in ops:
     if len(op.inputs) > 0:
         continue
-    # print('- {0}'.format(op.name))
+    print('- {0}'.format(op.name))
 
 print()
 print('Operation inputs:')
 for op in ops:
     if len(op.inputs) == 0:
         continue
-    # print('- {0:20}'.format(op.name))
-    # print('  {0}'.format(', '.join(i.name for i in op.inputs)))
+    print('- {0:20}'.format(op.name))
+    print('  {0}'.format(', '.join(i.name for i in op.inputs)))
 
 print()
 print('Tensors:')
 for op in ops:
     for out in op.outputs:
         continue
-
-        # print('- {0:20} {1:10} "{2}"'.format(str(out.shape), out.dtype.name, out.name))
+        print('- {0:20} {1:10} "{2}"'.format(str(out.shape), out.dtype.name, out.name))
