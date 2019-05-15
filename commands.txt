@@ -28,7 +28,7 @@ c:/OBD/ProtoBuf/bin/protoc object_detection/protos/string_int_label_map.proto --
 c:/OBD/ProtoBuf/bin/protoc object_detection/protos/train.proto --python_out=.
 
 
-
+from_detection_checkpoint: true (in config file after fine_tune_checkpoint)
 
 
 
